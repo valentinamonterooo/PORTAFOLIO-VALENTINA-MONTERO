@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <title>Portafolio Valentina</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <span class="logo">VALENTINA MONTERO</span>
+      <ul>
+        <li><a href="#intro">INICIO</a></li>
+        <li><a href="#proyectos">PROYECTOS</a></li>
+        <li><a href="#sobre-mi">SOBRE MÍ</a></li>
+        <li><a href="#contacto">CONTACTO</a></li>
+      </ul>
+    </nav>
+    <section class="intro" id="intro">
+      <div class="intro__texto">
+        <h1 class="intro__titulo">HOLA, YO SOY VALENTINA.</h1>
+        <button class="intro__boton"><a href="https://www.canva.com/design/DAFzzjMUrIo/1qYZNXCfoMaUNqvp28TlTw/edit?utm_content=DAFzzjMUrIo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="boton">DESCARGAR MI CV</a></button>
+      </div>
+      <img src="img/foto_val.JPG" alt="Foto de Valentina" class="intro__foto" />
+    </section>
+  </header>
+
+  <main>
+    <section id="proyectos">
+      <h2>PROYECTOS RELEVANTES</h2>
+      <p>Cada proyecto refleja mi pasión por el diseño, la creatividad y la intención de comunicar visualmente de forma clara y auténtica. ¡Gracias por ver mi trabajo!</p>
+      <br>
+      <article class="proyecto">
+        <img src="img/proyecto_1.JPG" alt="Proyecto 1" />
+        <div class="proyecto__detalle">
+          <h3>CARRUSEL PARA INSTAGRAM</h3>
+          <p>Este carrusel explora el papel del diseñador en la era digital, especialmente en plataformas como Instagram, donde la creatividad, la estrategia y la identidad visual se convierten en herramientas clave para destacar y conectar con las audiencias.</p>
+          <a class="publicidad" href="https://www.instagram.com/p/C9DATNTOhfy/?igsh=MWJhYnhudmF4MWc5YQ==" target="_blank">Ver más</a>
+        </div>
+      </article>
+
+      <article class="proyecto">
+        <img src="img/proyecto_2.JPG" alt="Proyecto 2" />
+        <div class="proyecto__detalle">
+          <h3>PORTADA REELS EDUCATIVO</h3>
+          <p>Este proyecto busca resaltar el valor de la ética en el diseño, recordando que detrás de cada decisión visual hay una responsabilidad social. El rol del diseñador va más allá de lo estético: impacta, comunica y transforma realidades.</p>
+          <a class="publicidad" href="https://www.behance.net/gallery/228214391/TODO-LO-QUE-SE-VE-BIEN-REALMENTE-SE-HACE-BIEN" target="_blank">Ver más</a>
+        </div>
+      </article>
+
+      <article class="proyecto">
+        <img src="img/proyecto_3.JPG" alt="Proyecto 3" />
+        <div class="proyecto__detalle">
+          <h3>IDENTIDAD VISUAL</h3>
+          <p>Esta identidad visual nace de la riqueza cultural y natural de Colombia, fusionando color, tradición y funcionalidad. Las agendas representan una invitación a organizar la vida diaria con inspiración local, pensadas para conectar con el alma creativa de quienes planifican con pasión.</p>
+          <a class="publicidad" href="https://www.instagram.com/trazarte_bq?igsh=dHkzcG41cW42bjF4&utm_source=qr">Ver más</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="sobre-mi">
+      <h2>SOBRE MÍ</h2>
+      <h3>Soy Valentina Montero Guzmán, estudiante de Diseño Gráfico.</h3>
+      <p>En la Universidad Autónoma del Caribe, me encuentro en un aprendizaje constante. Soy una persona proactiva y muy autodidacta, lo que me ha llevado a descubrir pasiones como el branding, la creación de marca y el marketing.</p>
+    </section>
+
+    <section id="contacto">
+      <h2>CONTÁCTAME</h2>
+      <form>
+        <input type="text" placeholder="Nombre" required />
+        <input type="email" placeholder="Correo electrónico" required />
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Valentina Montero</p>
+  </footer>
+
+  <script>
+    const form = document.querySelector("form");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("¡Gracias por tu mensaje!");
+      form.reset();
+    });
+  </script>
+</body>
+</html>
